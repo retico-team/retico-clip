@@ -1,4 +1,4 @@
-# retico-yolov8
+# retico-clip
 A ReTiCo module for CLIP. See below for more information.
 
 ### Installation and requirements
