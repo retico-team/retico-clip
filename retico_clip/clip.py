@@ -94,14 +94,19 @@ class ClipObjectFeatures(retico_core.AbstractModule):
                 if i>=self.top_objects: break
                 sub_img = detected_objects[obj]
                 
-                if self.show:
-                    import cv2
-                    img_to_show = np.asarray(sub_img)
-                    cv2.imshow('image',cv2.cvtColor(img_to_show, cv2.COLOR_RGB2BGR)) 
-                    cv2.waitKey(1)
+                # if self.show:
+                #     import cv2
+                #     img_to_show = np.asarray(sub_img)
+                #     cv2.imshow('image',cv2.cvtColor(img_to_show, cv2.COLOR_RGB2BGR)) 
+                #     cv2.waitKey(1)
 
-                sub_img = Image.fromarray(sub_img)
-                sub_img.load()
+                if self.show:
+                    # print(sub.getbands())
+                    # sub = sub.convert("BGR")
+                    sub.show()                
+
+                # sub_img = Image.fromarray(sub_img)
+                # sub_img.load()
 
                 with torch.no_grad():
                     img = self.preprocess(sub_img).unsqueeze(0).to(self.device)
