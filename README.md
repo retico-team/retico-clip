@@ -5,6 +5,7 @@ A ReTiCo module for CLIP. See below for more information.
 
 See https://github.com/openai/CLIP
 
+`pip install setuptools==70.0`
 `pip install git+https://github.com/openai/CLIP.git`
 
 ### Example
