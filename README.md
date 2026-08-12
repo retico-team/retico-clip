@@ -4,10 +4,10 @@ A ReTico module for CLIP visual feature embeddings from objects detected within 
 ## Installation and Requirements
 
 To use the CLIP module you first need to install the retico-core and retico-vision packages:
-Install retico_core:
-* ```pip install git+https://github.com/retico-team/retico-core.git```
-Install retico_vision:
-* ```pip install git+https://github.com/retico-team/retico-vision.git```
+* Install retico_core:
+  ```pip install git+https://github.com/retico-team/retico-core.git```
+* Install retico_vision:
+  ```pip install git+https://github.com/retico-team/retico-vision.git```
 
 Right after that, install OpenAI's CLIP package:
 * Install clip:
