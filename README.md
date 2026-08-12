@@ -48,7 +48,7 @@ from retico_vision.vision import ExtractObjectsModule
 from retico_sam.sam import SAMModule
 from retico_clip.clip import ClipObjectFeatures
 
-path_var = "sam_vit_h_4b8939.pth"
+path_var = "var-name"
 
 webcam = WebcamModule()
 sam = SAMModule(model="h", path_to_chkpnt=path_var, use_bbox=True)
