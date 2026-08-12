@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools==70", "setuptools-scm[simple]>=8"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "retico-clip"
+dynamic = ["version"]
+dependencies = [
+    "retico-core>=2.0.0",
+    "retico-vision",
+    "torch>=2.0",
+    "numpy",
+    "Pillow",
+    "clip @ git+https://github.com/openai/CLIP.git",
+]
+requires-python = ">=3.6, <4"
+description = "Retico module for extracting CLIP visual features"
+readme = "README.md"
+license = { file = "LICENSE" }
+keywords = [
+    "retico",
+    "framework",
+    "incremental",
+    "clip",
+    "vision",
+    "features"
+]
+classifiers = [
+        "Development Status :: 2 - Pre-Alpha",
+        "Programming Language :: Python :: 3",
+        "License :: OSI Approved :: Apache Software License",
+    ]
